@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chocolate Cake Recipe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="recipe-card">
+    <h1>Chocolate Cake</h1>
+    <img src="images/chocolate-cake.jpg" alt="Chocolate Cake" class="recipe-image"/>
+
+    <div class="prep-info">
+      <p><strong>Preparation Time:</strong> 45 mins</p>
+      <p><strong>Serving Size:</strong> 6</p>
+    </div>
+
+    <button onclick="toggleSection('ingredients')">Show Ingredients</button>
+    <ul id="ingredients" class="hidden">
+      <li>2 cups flour</li>
+      <li>1 cup sugar</li>
+      <li>1 cup milk</li>
+      <li>1/2 cup cocoa powder</li>
+      <li>1 tsp baking soda</li>
+      <li>1/2 cup vegetable oil</li>
+    </ul>
+
+    <button onclick="toggleSection('steps')">Show Steps</button>
+    <ol id="steps" class="hidden">
+      <li>Preheat the oven to 180°C.</li>
+      <li>Mix all dry ingredients.</li>
+      <li>Add milk and oil, stir until smooth.</li>
+      <li>Pour into baking tin.</li>
+      <li>Bake for 35 mins.</li>
+      <li>Let it cool before serving.</li>
+    </ol>
+
+    <div class="cooking-controls">
+      <button onclick="startCooking()">Start Cooking</button>
+      <button onclick="nextStep()">Next Step</button>
+    </div>
+
+    <div class="progress-container">
+      <div id="progress-bar"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
