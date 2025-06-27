@@ -1,0 +1,85 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #fefefe;
+}
+
+.recipe-card {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background: #fff8f0;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.recipe-card h1 {
+  text-align: center;
+  color: #7b3f00;
+}
+
+.recipe-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.prep-info {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #a0522d;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #8b4513;
+}
+
+ul li, ol li {
+  margin: 8px 0;
+  transition: color 0.3s;
+}
+
+ul li:hover, ol li:hover {
+  color: #d2691e;
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none;
+}
+
+.progress-container {
+  background: #eee;
+  border-radius: 8px;
+  height: 20px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+#progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: #cd853f;
+  transition: width 0.5s ease-in-out;
+}
+
+@media (max-width: 600px) {
+  .recipe-card {
+    padding: 15px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
